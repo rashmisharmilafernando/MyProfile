@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider Animation</title>
+    <style>
+        body{background-color: white}
+        main{
+            width: 400px;
+            height: 300px;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        main>section{
+            width: 1600px;
+            height: 300px;
+
+            display: flex;
+            animation-name: slider-animation;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+
+        }
+        main>section>div{
+            width: 400px;
+            height: 300px;
+        }
+        main>section>div:nth-child(1){
+           background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/210316134738-02-wisdom-project-summer.jpg?q=w_3568,h_2006,x_0,y_0,c_fill");
+            background-size: cover;
+            background-repeat: repeat;
+        }
+        main>section>div:nth-child(2){
+          background-image: url("https://s.calendarr.com/upload/articles/sh/ut/shutterstock-243267301_c.jpg?auto_optimize=low&width=640");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main>section>div:nth-child(3){
+            background-image: url("https://img.freepik.com/free-photo/road-forest_1160-15.jpg?w=900&t=st=1688295820~exp=1688296420~hmac=1125d224ace63e72aebb1e4772bf548b1e0eec11c04b1a15052491cdba032412");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main>section>div:nth-child(4){
+            background-image: url("https://seasonsyear.com/sites/default/files/images/seasons/winter-13.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        @keyframes slider-animation {
+            0%,20%{
+                transform: translate(-0%);
+            }
+            25%,45%{
+                transform: translate(-25%);
+            }
+            50%,70%{
+                transform: translate(-50%);
+            }
+            75%,100%{
+                transform: translate(-75%);
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+</body>
+</html>

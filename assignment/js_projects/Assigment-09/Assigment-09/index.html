@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Knight Rider Pattern</title>
+  <style>
+    body {
+      background-color: black;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #light-panel {
+      border: 1px solid black;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      width: 40vw;
+      height: 5vh;
+
+    }
+
+    .light {
+      position: relative;
+      top: -33px;
+      background-color: white;
+      border: 1px solid black;
+      flex: 1;
+    }
+
+    body > h1 {
+      color: white;
+      text-align: center;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #line1 {
+      background-color: white;
+      width: 700px;
+      height: 1px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #line2 {
+      background-color: white;
+      width: 700px;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #buttons {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  </style>
+</head>
+<body>
+<h1> Knight Rider </h1>
+<div id="line1"></div>
+<div id="line2"></div>
+
+<section id="light-panel">
+
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <audio id="music" src="Knight_Rider.mp3"></audio>
+</section>
+<div id="buttons">
+  <button id="Startbtn" type="button">Start</button>
+  <button id="stopbtn" type="button">Stop</button>
+</div>
+<script src="jquery-3.6.4.min.js"></script>
+<script>
+
+  var lightNumber = 0;
+  var lights = $('.light');
+  console.log(lights);
+  let int = null;
+  function updateLights() {
+    $('.light').css({background: 'white'});
+    lights[lightNumber].style.background = 'red';
+
+    if (lightNumber > 0) {
+      lights[lightNumber - 1].style.background = 'pink';
+    }
+    if (lightNumber < 6) {
+      lights[lightNumber + 1].style.background = 'pink';
+    }
+    if (lightNumber === 6) {
+      direction = 'LEFT'
+    }
+    if (lightNumber === 0) {
+      direction = 'RIGHT'
+    }
+    if (direction === 'RIGHT') {
+      lightNumber++;
+    } else {
+      lightNumber--;
+    }
+
+  }
+
+  document.getElementById('Startbtn').addEventListener('click', () => {
+    if (int !== null) {
+      clearInterval(int);
+    }
+    int = setInterval(updateLights, 50);
+  })
+  document.getElementById('stopbtn').addEventListener('click', () => {
+    clearInterval(int);
+  })
+  let interval =null;
+  $('#stopbtn').click(()=>{
+    $('#music')[0].pause();
+    clearInterval(interval);
+  })
+  $('#Startbtn').click(()=>{
+    $('#music')[0].play();
+    clearInterval(interval);
+    interval = setInterval(lightNumber, 90);
+  })
+</script>
+</body>
+</html>

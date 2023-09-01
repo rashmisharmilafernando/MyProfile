@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyProfile</title>
+
+    <link rel="stylesheet" href="assents/Css/stylesheet.css">
+    <link rel="stylesheet" href="assents/Css/AllPagesCss.css">
+    <link rel="stylesheet" href="assents/Css/homepage.css">
+    <link rel="stylesheet" href="assents/Css/aboutmeCss.css">
+    <link rel="stylesheet" href="assents/Css/serverCss.css">
+    <link rel="stylesheet" href="assents/Css/experienceCss.css">
+    <link rel="stylesheet" href="assents/Css/contectmeCss.css">
+    <link rel=" MediaQuearyCss" href="assents/Css/MediaQuearyCss.css">
+    <link rel="AnimationCss" href="assents/Css/AnimationCss.css">
+    <link rel="stylesheet"
+          href="assents/lib/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assents/lib/fontwesom/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Roboto+Mono:ital,wght@0,100;1,300&display=swap"
+          rel="stylesheet">
+    <!--import AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        .main-image1 {
+            width: 250px;
+            height: 250px;
+            border-bottom-right-radius: 150PX;
+            border-bottom-left-radius: 150PX;
+            background-image: url("assents/Images/homepageImage.png");
+            background-size: cover;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        /*navigation bar*/
+        .navbar {
+            padding: 0;
+            background: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 5;;
+        }
+
+        .nav-link {
+            color: black;
+            transition-duration: 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #a2a8c8;
+        }
+
+        .header-title {
+            left: 0;
+            top: 0;
+            border-radius: 25px 25px 0 25px;
+            background-color: #a2a8c8;
+            color: white;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        .card-header {
+            left: 0;
+            top: 0;
+            border-radius: 25px 25px 0 25px;
+            background-color: #a2a8c8;
+            color: white;
+            text-align: left;
+            font-size: 20px;
+        }
+
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu > li {
+            margin: 0 1rem;
+            overflow: hidden;
+        }
+
+        .menu-button-container {
+            display: none;
+            height: 100%;
+            width: 30px;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        .menu-button,
+        .menu-button::before,
+        .menu-button::after {
+            display: block;
+            background-color: #a2a8c8;
+            position: absolute;
+            height: 4px;
+            width: 30px;
+            transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+            border-radius: 2px;
+        }
+
+        .menu-button::before {
+            content: '';
+            margin-top: -8px;
+        }
+
+        .menu-button::after {
+            content: '';
+            margin-top: 8px;
+        }
+
+        #menu-toggle:checked + .menu-button-container .menu-button::before {
+            margin-top: 0px;
+            transform: rotate(405deg);
+        }
+
+        #menu-toggle:checked + .menu-button-container .menu-button {
+            background: rgba(0, 255, 255, 0);
+        }
+
+        #menu-toggle:checked + .menu-button-container .menu-button::after {
+            margin-top: 0px;
+            transform: rotate(-405deg);
+        }
+
+        /*MEDIA QUERY*/
+        @media screen and (max-width: 600px) {
+
+            .aboutme-Img{
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+
+
+        }
+
+        @media (max-width: 990px) {
+
+            .btn-downloadcv {
+                width: 148px;
+                height: 48px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .aboutme-Img > img{
+                padding-left: 30px;
+                padding-right: 50px;
+            }
+
+            .aboutme-Img{
+                padding-right: 150px;
+                padding-left: 100px;
+            }
+
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+        }
+
+        @media (max-width: 700px) {
+            .aboutme-Img{
+                padding-right: 100px;
+                padding-left: 100px;
+            }
+
+
+            .menu-button-container {
+                display: flex;
+            }
+
+            .menu {
+                position: absolute;
+                top: 0;
+                margin-top: 45px;
+                left: 0;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #menu-toggle ~ .menu li {
+                height: 0;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+
+            #menu-toggle:checked ~ .menu li {
+                border: 1px solid white;
+                height: 2.5em;
+                transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+
+            .menu > li {
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                padding: 0.5em 0;
+                width: 100%;
+                color: white;
+                background-color: #a2a8c8;
+            }
+
+            .menu > li:not(:last-child) {
+                border-bottom: 1px solid #444;
+            }
+
+            .nav-link:hover {
+                color: black;
+            }
+        }
+
+        @media (max-width: 1190px) {
+            section .content {
+                width: 85%;
+            }
+        }
+
+        @media (max-width: 765px) and (min-width: 1024px) {
+            .serviceCards {
+
+
+            }
+        }
+
+        @media (min-width: 1535px) and (max-width: 1746px) {
+            #home {
+                position: relative;
+                height: 730px;
+                width: 100%;
+            }
+
+            #about {
+                width: 100%;
+            }
+
+            #service {
+                width: 100%;
+            }
+
+            #experience {
+                width: 100%;
+            }
+
+            #contactme {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 768px){
+            .row-cols-md-4>* {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 426px){
+
+            #home{
+                position: relative;
+                width: 200%;
+            }
+            #about{
+                position: relative;
+                width: 200%;
+            }
+            #service{
+                position: relative;
+                width: 200%;
+            }
+            #experience{
+                position: relative;
+                width: 200%;
+            }
+            #contactme{
+                position: relative;
+                width: 200%;
+            }
+            .aboutMe > h2{
+                margin-top: 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<nav class="navbar fixed-header">
+
+    <a class="navbar-brand" style="font-weight: 600;font-size: 24px;text-transform: uppercase;color: #1F75AC;"
+       href="index3.html">.RASHI.</a>
+    <input id="menu-toggle" type="checkbox"/>
+    <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+        <li><a class="nav-link" aria-current="page" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About Me</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#service">Service</a></li>
+        <li><a class="nav-link" href="#contactme">Contact me</a></li>
+    </ul>
+</nav>
+<main class="main">
+    <!--Home Page-->
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+
+                        <div class="main-image1"></div>
+                        <br>
+                        <h6 class="main-subtitle" style="font-size: 10px;color: white;margin: 0">HELLO THERE,NICE TO
+                            MEET YOU..! I'M</h6>
+                        <div class="content">
+                            <h1><i>Rashmi</i></h1>
+                        </div>
+                        <p style="font-size: 15px;color: white;margin: 0">Full stack developer</p><br>
+                        <a class="btn-mailme" href=mailto:“rsrashi0430@gmail.com”><span>Scheduled a mail!</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About me Page-->
+    <section id="about" data-aos="fade-up"
+             data-aos-duration="1000">
+        <div class="container">
+            <div class="row sm-m-25px-b m-35px-b">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <span class="text-dark px-2 text-uppercase"> - ABOUT ME -</span><br>
+                        <h2>Know Me More</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 m-15px-tb">
+                    <div class="aboutme-Img">
+                        <img src="assents/Images/aboutmeimge.png"
+                             title="Rashmi Sharmila"
+                             alt="aboutmeImage">
+                    </div>
+                </div>
+                <div class="col-lg-7 m-15px-tb">
+                    <div class="aboutMe">
+                        <h2>Rashmi Sharmila</h2>
+                        <p style="color: black">I'm currently enrolled as a student in the BSc (Hons) in Computer
+                            Science at the Institute of
+                            Software Engineering (IJSE) and pursuing an undergraduate degree.<br><br>
+                            I am interested in the UI/UX design and web development fields and am seeking exciting
+                            opportunities
+                            related to them.
+                            Being a government student Following my A/L exam, I decided to attend IJSE to pursue my
+                            dream of
+                            becoming a software engineer.<br><br>
+                            First, I completed a six-month part-time Comprehensive Master Java Developer (CMJD) course.
+                            As a
+                            result, I enrolled in the GDSE program.
+                            This is a turning point in my life. I gained a lot of knowledge about software engineering
+                            through
+                            IJSE.
+                            I work hard and enjoy studying anything on a daily basis. I enjoy collaborating with others.
+                            I
+                            am
+                            most interested in learning new things and technologies.
+                            I've worked as a student counselor and academy coordinator.<br><br>
+                            Now I have a small online business. Business management and financial management are skills
+                            that
+                            will develop alongside my company.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Experience-->
+    <section id="experience" data-aos="fade-up"
+             data-aos-duration="1000">
+        <div class="container">
+            <div class="row sm-m-25px-b m-35px-b">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <span class="text-dark px-2 text-uppercase">- Resume -</span><br>
+                        <h2>A summary of My Resume</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mt-lg-0 mt-3">
+                    <div class="timeline">
+                        <div class="card-header header-title">Education</div>
+                        <div class="outer">
+                            <div class="card" STYLE="border:0">
+                                <div class="info">
+                                    <h5 class="title">Comprehensive Master Java Developer</h5>
+                                    <h6><p class="year-text"><i class="font-year">(2021 JANU-2021 JULY)</i></p></h6>
+                                    <p><B>- Institute of Software Engineering</B></p>
+                                    <p class="card-text">After AL's I am join this part time course for my higher
+                                        education.this 6 month
+                                        java progamming diploma..I studied fundementals of programming, OOP, DBMS, etc.
+                                        in the first time on
+                                        this course. I entered to programming first by this course.</p>
+                                </div>
+                            </div>
+                            <div class="card" STYLE="border:0">
+                                <div class="info">
+                                    <h5 class="title">Graduate Diploma in Software Engineering</h5>
+                                    <h6><p class="year-text-right"><i class="font-year">(2022 JANU-Present)</i></p></h6>
+                                    <p><B>- Institute of Software Engineering</B></p>
+                                    <p class="card-text">After get AL's result I am join this full time course for my
+                                        higher education after
+                                        completed my 6 month diploma. 6 month course helped me for follow this course.
+                                        Currently i'm studies
+                                        at 2nd semester. now i learned fundamental of java programming,OOP,Layerd
+                                        Architecture,Internet
+                                        technology,Hibernate.</p>
+                                </div>
+                            </div>
+                            <div class="card" STYLE="border:0">
+                                <div class="info">
+                                    <h5 class="title">Ordinary Level & Advanced Level</h5>
+                                    <h6><p class="year-text"><i class="font-year">(2016-2028) / (2018-2020)</i></p></h6>
+
+                                    <p><B>- Agamethi Balika Viduhala Panadura</B></p>
+                                    <p class="card-text">I did AL's in Mathematics.</p>
+                                </div>
+                            </div>
+                            <div class="card" STYLE="border:0">
+                                <div class="info">
+                                    <h5 class="title">Advanced Mobile Application Developer</h5>
+                                    <h6><p class="year-text-right"><i class="font-year">Present</i></p></h6>
+
+                                    <BR>
+                                    <p><B>- Academy Of Computer Programming And Training </B></p>.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-3">
+                    <div class="timeline">
+                        <div class="card-header header-title">Experience</div>
+                        <div class="outer">
+                            <div class="card" STYLE="border:0">
+                                <div class="info">
+                                    <h5 class="title">Course- Coordinate</h5>
+                                    <h6><p class="year-text"><i class="font-year">(2021 JANU-2021 DEC)</i></p></h6>
+                                    <p><B>- Institute of Software Engineering</B></p>
+                                </div>
+                            </div>
+                            <div class="card" STYLE="border:0">
+                                <div class="info">
+                                    <h5 class="title">Course- Coordinate</h5>
+                                    <h6><p class="year-text"><i class="font-year">(2023 JANU-Present)</i></p></h6>
+                                    <p><B>- Academy Of Computer Programming And Training</B></p>
+                                </div>
+                            </div>
+                            <div class="card" STYLE="border:0">
+                                <div class="info">
+                                    <h5 class="title">Director</h5>
+                                    <h6><p class="year-text"><i class="font-year">(2023 JANU-Present)</i></p></h6>
+                                    <p><B>- Blaze.lk</B></p>
+                                </div>
+                            </div>
+                            <div class="card" STYLE="border:0">
+                                <div class="info">
+                                    <h5 class="title">Member of Students Committee</h5>
+                                    <h6><p class="year-text"><i class="font-year">(Present)</i></p></h6>
+                                    <p><B>- Institute of Software Engineering</B></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-lg-6 mt-lg-0 mt-6">
+                        <div class="card-header header-title">Skill</div>
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="box"><img
+                                                src="assents/Images/java%20(1).png"
+                                                width="70px;" height="70px"></div>
+                                        <div class="box"><img
+                                                src="assents/Images/mysql.png"
+                                                width="70px;" height="70px"></div>
+                                        <div class="box"><img
+                                                src="assents/Images/html.png"
+                                                width="70px;" height="70px"></div>
+                                        <div class="box"><img
+                                                src="assents/Images/css-3.png"
+                                                width="70px;" height="70px"></div>
+                                    </div>
+                                    <button CLASS="btn-downloadcv">
+                                        <a href="/assents/payment%20details.pdf"
+                                           target="_blank">Download CV</a>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Service-->
+    <section id="service" data-aos="fade-up"
+             data-aos-duration="1000">
+        <div class="container">
+            <div class="serviceCards row sm-m-25px-b m-35px-b">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <span class="text-dark px-2 text-uppercase">- Portfolio -</span><br>
+                        <h2>Some of my most recent projects</h2>
+                        <nav class="project-nav">
+                            <div class="items">
+                                <div onclick="tabBarFunction(event,'project')" class="nav-link lineBorder"
+                                     id="btn-project">Projects
+                                </div>
+                                <div onclick="tabBarFunction(event,'assigments')" class="nav-link lineBorder"
+                                     id="btn-assignment">Assignment
+                                </div>
+                                <div onclick="tabBarFunction(event,'ui')" class="nav-link lineBorder" id="btn-ui">
+                                    UI/UX
+                                </div>
+                            </div>
+                        </nav>
+                        <br><br>
+                        <div class="typeofservice">
+
+                            <div id="project" class="tabBar">
+                                <h5><b>-DESKTOP APPLICATIONS-</b></h5><br>
+                                <div class="row row-cols-1 row-cols-md-4 g-5">
+                                    <div class="col">
+                                        <div id="projectTab1" class="card-project hvr-forward">
+                                            <img src="assents/hotelManagmentSsytem.png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Hotel Management System</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/hotelManagementSystem.git">View</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/game.jpg"
+                                                 class="card-img-top"
+                                                 alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Connect 4 Game</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/connect4game.git">View</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><h5><b>-WEB APPLICATIONS-</b></h5><br>
+                                <div class="row row-cols-1 row-cols-md-4 g-5">
+                                    <div class="col">
+                                        <div id="projectTab" class="card-project hvr-forward">
+                                            <img src="assents/Images/Projects/calculator.jpg"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Web Calculator</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/-internetTechnologies-Assigment10">View</a>
+                                                <a target="_self" class="btn-Demo hvr-border-fade"
+                                                   href="https://rashmisharmila.github.io/Web-Calculator/">Demo</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/Projects/car.png"
+                                                 class="card-img-top"
+                                                 alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Car Animation </h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/-internetTechnologies-Assigment04/blob/main/case06.html">View</a>
+                                                <a target="_self" class="btn-Demo hvr-border-fade"
+                                                   href="projects/car_Animation/case06.html">Demo</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/Projects/SPA-POS.jpg"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">SAP POS System</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/POS_Application.git">View</a>
+                                                <a target="_self" class="btn-Demo hvr-border-fade"
+                                                   href="https://rashmisharmila.github.io/SAP-PlaceOrderSystem/">Demo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="projects/Simple_Login_form/Group 4.png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Simple Login Form</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/Simple_Login_Form.git">View</a>
+                                                <a target="_self" class="btn-Demo hvr-border-fade"
+                                                   href="https://rashmisharmila.github.io/Simple_Login_Form/">Demo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="assigments" class="tabBar">
+                                <div class="row row-cols-1 row-cols-md-4 g-5">
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/assigmentImage.png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Animation</h5>
+                                                <p>All are Animation Assignments</p>
+                                                <a target="_self" class="btn-Preview hvr-border-fade"
+                                                   href="pages/Animation/index.html">View</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/assigmentImage.png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Positioning</h5>
+                                                <p>All are positioning Assignments</p>
+
+                                                <a target="_self" class="btn-Preview hvr-border-fade"
+                                                   href="pages/Possion/index.html">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/assigmentImage.png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Grid Layout</h5>
+                                                <p>All are Grid Layout Assignments</p>
+
+                                                <a target="_self" class="btn-Preview hvr-border-fade"
+                                                   href="pages/GridLayout/index.html">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/assigmentImage.png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Transitions</h5>
+                                                <p>All are Transitions Assignments</p>
+
+                                                <a target="_self" class="btn-Preview hvr-border-fade"
+                                                   href="pages/Transitions/index.html">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/assigmentImage.png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">JS Assignments</h5>
+                                                <p>All are JS Assignments</p>
+
+                                                <a target="_self" class="btn-Preview hvr-border-fade"
+                                                   href="pages/JsProjects/index.html">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/assigmentImage.png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Bootstrap Assignments</h5>
+                                                <p>All are Bootstrap Assignments</p>
+
+                                                <a target="_self" class="btn-Preview hvr-border-fade"
+                                                   href="pages/boostrap/index.html">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ui" class="tabBar">
+                                <div class="row row-cols-1 row-cols-md-4 g-5">
+                                    <div class="col">
+                                        <div id="uiTab" class="card-project hvr-forward">
+                                            <img src="assents/Images/UI%20Designs/Cupcake%201.png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">MiniSweeties Mobile App Design</h5>
+
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="assents/Images/UI Designs/Cupcake 1.png">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/UI Designs/Group 2.png"
+                                                 class="card-img-top"
+                                                 alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Music Mobile App Design</h5>
+
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="assents/Images/UI Designs/Group 2.png">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/UI Designs/Group 2 (2).png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Techgear` Website Design </h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="assents/Images/UI Designs/Group 2 (2).png">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/UI%20Designs/Watches.png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Me. Mobile app Design</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="assents/Images/UI Designs/Watches.png">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contactme-->
+    <section id="contactme" data-aos="fade-up"
+             data-aos-duration="1000">
+        <div class="container">
+            <div class="row sm-m-25px-b m-35px-b">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <span class="text-dark px-2 text-uppercase">- Contact me-</span><br>
+                        <h2>Interested in working with me?</h2>
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 m-15px-tb">
+                                <form>
+                                    <h5 class="contactme-subtitle">Get In Touch</h5>
+
+                                    <div class="form-inputs"><input type="text" placeholder="Your name"></div>
+                                    <div class="form-inputs"><input type="text" placeholder="Your email"></div>
+                                    <div class="form-inputs"><input type="text" placeholder="Your contact number">
+                                    </div>
+                                    <div class="form-inputs"><textarea id="textarea" title="Message" cols="30"
+                                                                       rows="5"
+                                                                       placeholder="Write a Message"
+                                                                       required></textarea></div>
+                                    <button class="btn-sendMessage">Send Message</a></button>
+
+                                </form>
+                            </div>
+
+                            <div class="col-lg-5 m-15px-tb">
+                                <form>
+                                    <h5 class="contactme-subtitle">My Contact Details</h5>
+                                    <div style="width: 400px;height: 350px">
+                                        <div><span class="contactme-mydetails">Emial <br>rsrashi0430@gmail.com</span>
+                                        </div>
+                                        <br>
+                                        <div><span class="contactme-mydetails">Phone <br>+(94)70 271 3066</span></div>
+                                        <br>
+                                        <div><span
+                                                class="contactme-mydetails">Address <br>No 194/A<br>Maharakmana Rd,<br>Mawala<br>Wadduwa</span>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <br>
+                            </div>
+                            <hr style="margin-top: 50px">
+                            <div>
+                                <a class="socialMediaLinks"
+                                   href="https://www.linkedin.com/in/rashmi-sharmila-5ba642252/"><i
+                                        class="fa-brands fa-linkedin fa-2xl"
+                                        style="color: #ffffff;"></i></a>
+                                <a class="socialMediaLinks" href="https://github.com/rashmisharmila"><i
+                                        class="fa-brands fa-square-github fa-2xl"
+                                        style="color: #ffffff;"></i></a>
+                                <a class="socialMediaLinks" href="https://twitter.com/RashmiiSharmil"><i
+                                        class="fa-brands fa-square-twitter fa-2xl"
+                                        style="color: #ffffff;"></i></a>
+                                <a class="socialMediaLinks" href="https://www.instagram.com/_.rashmi_sharmila._/"><i
+                                        class="fa-brands fa-square-instagram fa-2xl"
+                                        style="color: #ffffff;"></i></a>
+                            </div>
+                        </div>
+                        <br>
+                        <h6 style="text-align: center; font-size: 10px">© Rashmi Sharmila Presonal Website | All rights
+                            reserved | Designed By Rashmi Sharmila</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+</main>
+<!--import AOS lib js-->
+<script src="assents/lib/jquery-3.6.4.min.js"></script>
+<script src=" https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--init AOS-->
+<script>
+    AOS.init();
+    $(document).ready(() => {
+        setTimeout(() => { //loading time eka
+            $('#pre-loader').css("display", "none");
+        }, 3000)
+
+    })
+    // Sticky Navigation Menu JS Code
+    let nav = document.querySelector("nav");
+    let scrollBtn = document.querySelector(".scroll-button a");
+    console.log(scrollBtn);
+    let val;
+    window.onscroll = function () {
+        if (document.documentElement.scrollTop > 20) {
+            nav.classList.add("sticky");
+            scrollBtn.style.display = "block";
+        } else {
+            nav.classList.remove("sticky");
+            scrollBtn.style.display = "none";
+        }
+
+    }
+
+    // Side NavIgation Menu JS Code
+    let body = document.querySelector("body");
+    let navBar = document.querySelector(".navbar");
+    let menuBtn = document.querySelector(".menu-btn");
+    let cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = function () {
+        navBar.classList.add("active");
+        menuBtn.style.opacity = "0";
+        menuBtn.style.pointerEvents = "none";
+        body.style.overflow = "hidden";
+        scrollBtn.style.pointerEvents = "none";
+    }
+    cancelBtn.onclick = function () {
+        navBar.classList.remove("active");
+        menuBtn.style.opacity = "1";
+        menuBtn.style.pointerEvents = "auto";
+        body.style.overflow = "auto";
+        scrollBtn.style.pointerEvents = "auto";
+    }
+
+    // Side Navigation Bar Close While We Click On Navigation Links
+    let navLinks = document.querySelectorAll(".menu li a");
+    for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener("click", function () {
+            navBar.classList.remove("active");
+            menuBtn.style.opacity = "1";
+            menuBtn.style.pointerEvents = "auto";
+        });
+    }
+
+    document.getElementById("btn-project").addEventListener("click", function () {
+        $("#project").css({display: 'block'})
+        $("#assigments").css({display: 'none'})
+        $("#ui").css({display: 'none'})
+    })
+
+    document.getElementById("btn-assignment").addEventListener("click", function () {
+        $("#project").css({display: 'none'})
+        $("#assigments").css({display: 'block'})
+        $("#ui").css({display: 'none'})
+    })
+
+    document.getElementById("btn-ui").addEventListener("click", function () {
+        $("#project").css({display: 'none'})
+        $("#assigments").css({display: 'none'})
+        $("#ui").css({display: 'block'})
+    })
+
+    function tabBarFunction(evt, itemsname) {
+        var i, x, tabLinks;
+        x = document.getElementsByClassName("tabBar");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+
+        tabLinks = document.getElementsByClassName("nav-link");
+        for (i = 0; i < x.length; i++) {
+            tabLinks[i].className = tabLinks[i].className.replace("lineBorder", " ");
+        }
+
+        document.getElementById(itemsname).style.display = "block";
+        evt.currentTarget.firstElementChild.className += "lineBorder";
+    }
+
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+</script>
+</body>
+</html>

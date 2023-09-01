@@ -1,0 +1,85 @@
+/*Apply highlighter*/
+.main-subtitle::selection {
+    color: #a2a8c8;
+    background-color: white;
+}
+
+/*Main image*/
+
+/*.main-image {
+    width: 250px;
+    height: 250px;
+    border-color: black;
+    border-bottom-right-radius: 150PX;
+    border-bottom-left-radius: 150PX;
+   background-image: url("assents/Images/homepageImage.png");
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}*/
+
+/*home page mail button*/
+.btn-mailme {
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    color: #a2a8c8;
+    text-align: center;
+    font-size: 15px;
+    padding: 8px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.btn-mailme {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    text-decoration:none;
+    color: #a2a8c8;
+
+}
+.btn-Preview:visited  {
+    color: #a2a8c8;
+}
+.btn-Preview:link {
+    color: #a2a8c8;
+}
+
+.btn-mailme:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 7px;
+    right: -20px;
+    transition: 0.5s;
+
+}
+
+.btn-mailme:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+    color: #a2a8c8;
+}
+
+.btn-mailme:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+h1>i {
+    color: white;
+    font-size: 100px;
+    font-family: 'Shrikhand', cursive;
+}
+#home {
+    background: #BE93C5;
+    background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);
+    background: linear-gradient(to right, #7BC6CC, #BE93C5);
+}

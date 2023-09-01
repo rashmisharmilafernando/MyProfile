@@ -1,0 +1,167 @@
+/* Timeline Container */
+ .card-header{
+    left: 0;
+    top: 0;
+    border-radius: 25px 25px 0 25px;
+    background-color: #a2a8c8;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+.font-year {
+    font-size: 15px;
+}
+
+.year-text-right {
+    text-align: right;
+}
+
+/* Card container */
+.card {
+    position: relative;
+    max-width: 600px;
+    max-width: 600px;
+}
+
+.card:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+}
+
+.card:nth-child(even) {
+    padding: 30px 30px 30px 0;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border: solid #a2a8c8;
+}
+
+.card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+}
+
+.card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+}
+
+.card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+}
+
+.card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+}
+
+.card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(190, 147, 197, 0.1);
+    color: gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.title {
+    color: #a2a8c8;
+    position: relative;
+}
+
+.title::selection {
+    color: white;
+    background-color: #a2a8c8;
+}
+
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #a2a8c8;
+    border: 1px solid #a2a8c8;
+    border-left: 10px solid #a2a8c8;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+    border-top: 10px solid white;
+}
+
+
+.card:nth-child(even) > .info > .title {
+    text-align: right;
+}
+
+
+.card:nth-child(odd) > .info > .title::before {
+    left: -45px;
+}
+
+
+.card:nth-child(even) > .info > .title::before {
+    right: -45px;
+    border-right: 10px solid #a2a8c8;
+    border-left: 10px solid white;
+    border-bottom: 10px solid white;
+    border-top: 10px solid white;
+
+}
+
+/*Softwae images*/
+.box {
+    width: 90px;
+    height: 90px;
+    /*  border: 3px solid black;*/
+    justify-content: center;
+    display: inline-block;
+}
+
+.div > img {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+/*download button*/
+.btn-downloadcv {
+    width: 200px;
+    height: 50px;
+    background-color: #a2a8c8;
+    border-radius: 5px;
+    border: 0;
+    transition: 0.5s;
+
+}
+
+.btn-downloadcv a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-downloadcv:hover {
+    background-color: #BE93C5;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.btn-downloadcv a:hover {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,90 @@
+
+.card-project {
+    background-color: #a2a8c8;
+    border-radius: 10px;
+}
+
+.card-project:hover {
+    box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3)
+}
+.btn-Preview {
+    background-color: white;
+    color: #BE93C5;;
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-decoration:none;
+    padding: 10px;
+
+
+}
+.btn-Preview:visited  {
+    color: #BE93C5;
+}
+.btn-Preview:link {
+    color: #BE93C5;
+}
+
+.btn-Demo {
+    color: white;
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-decoration:none;
+    padding: 10px;
+}
+.btn-Demo:visited  {
+    color: white;
+}
+.btn-Demo:link {
+    color: white;
+}
+
+.hvr-forward {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+    transform: translateX(8px);
+}
+
+.hvr-border-fade {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+}
+
+
+.project-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-link text-primary {
+    color: Black;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    font-family: 'Shrikhand', cursive;
+}
+
+

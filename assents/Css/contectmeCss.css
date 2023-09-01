@@ -1,0 +1,74 @@
+#contactme {
+    background: #BE93C5;
+    background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);
+    background: linear-gradient(to right, #7BC6CC, #BE93C5);
+}
+
+
+
+
+.contactme-subtitle {
+    color: black;
+    font-weight: 200;
+    align-items: center;
+    font-size: 1.55rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 495px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+
+::placeholder {
+    color: gray;
+}
+
+.form-inputs {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 495px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btn-sendMessage {
+
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    border: 0;
+    transition: 0.5s;
+    position: relative;
+    left: -145px;
+}
+
+.btn-sendMessage:hover {
+    width: 205px;
+    height: 55px;
+}
+
+.contactme-mydetails {
+    color: white;
+    letter-spacing: .1em;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+
+}
+.socialMediaLinks{
+    margin-right: 20px;
+}

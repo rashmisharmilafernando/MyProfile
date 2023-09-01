@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usage of Cascade Style Sheets - 01(case 2)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Roboto+Mono:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            position: relative;
+            border: 1px solid black;
+            padding: 10px;
+            box-shadow: 0px 2px;
+        }
+
+        header>nav {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        header>nav>ul {
+            margin: 0;
+        }
+
+        header>nav>ul>li {
+            display: inline-block;
+            padding: 5px;
+        }
+
+        main {
+            position: relative;
+        }
+
+        main > aside {
+            position: absolute;
+            background-color: purple;
+            width: 200px;
+            top: 0;
+            bottom: 0;
+            color: white;
+        }
+
+        main > aside > nav > ul {
+            list-style-type: none;
+        }
+
+        main > aside > nav > ul > li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        main > section {
+            margin-left: 200px;
+            padding: 5px;
+        }
+
+        main>section>p:first-child {
+            margin-top: 0;
+        }
+
+        main>section>p:last-child {
+            margin-bottom: 0;
+        }
+
+        main>section>div {
+            width: 100%;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        main>section>div>div {
+            width: calc(100%/3);
+            height: 300px;
+            position: absolute;
+            background-image: url("https://www.adorama.com/alc/wp-content/uploads/2021/05/bird-wings-flying-feature.gif");
+            background-size: cover;
+            background-position: center;
+            border: 1px solid black;
+        }
+
+        main>section>div>div:first-child {
+        }
+
+        main>section>div>div:nth-child(2) {
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        main>section>div>div:nth-child(3) {
+            right: 0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: gray;
+            padding: 20px;
+        }
+
+        footer>h4 {
+            margin: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header>
+    <img src="https://www.ijse.lk/images/logos/ijse.png" title="www.ijse.lk" alt="ijse.png" width="150">
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i> Home</li>
+            <li><i class="fa-solid fa-compass"></i> Service</li>
+            <li><i class="fa-solid fa-phone"></i> Contact</li>
+            <li><i class="fa-solid fa-building"></i> About us</li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-house"></i> Home</li>
+                <li><i class="fa-solid fa-compass"></i> Service</li>
+                <li><i class="fa-solid fa-phone"></i> Contact</li>
+                <li><i class="fa-solid fa-building"></i> About us</li>
+            </ul>
+        </nav>
+    </aside>
+    <section>
+
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate distinctio eaque fuga labore laboriosam repellat sunt suscipit voluptas? Aliquam ducimus ipsam iusto nihil perferendis? Accusantium doloribus laboriosam molestiae tempore? Accusantium doloribus laboriosam molestiae tempore?</p>
+    </section>
+
+</main>
+<footer>
+    <h4>Developed By IJSE</h4>
+</footer>
+
+</body>
+</html>
