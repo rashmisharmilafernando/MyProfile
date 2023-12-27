@@ -1,6 +1,6 @@
 
 .card-project {
-    background-color: #a2a8c8;
+    background-color: #164863;
     border-radius: 10px;
 }
 
@@ -9,7 +9,7 @@
 }
 .btn-Preview {
     background-color: white;
-    color: #BE93C5;;
+    color: #164863;;
     width: 100px;
     height: 45px;
     border-radius: 5px;
@@ -20,10 +20,10 @@
 
 }
 .btn-Preview:visited  {
-    color: #BE93C5;
+    color: #164863;
 }
 .btn-Preview:link {
-    color: #BE93C5;
+    color: #164863;
 }
 
 .btn-Demo {
@@ -82,9 +82,8 @@
 }
 
 h1 {
-    color: white;
+    color: #1e2125;
     font-size: 100px;
-    font-family: 'Shrikhand', cursive;
 }
 
 

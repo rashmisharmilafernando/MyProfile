@@ -98,14 +98,14 @@
         }
 
         .nav-link:hover {
-            color: #a2a8c8;
+            color: #164863;
         }
 
         .header-title {
             left: 0;
             top: 0;
             border-radius: 25px 25px 0 25px;
-            background-color: #a2a8c8;
+            background-color: #164863;
             color: white;
             text-align: left;
             font-size: 20px;
@@ -115,7 +115,7 @@
             left: 0;
             top: 0;
             border-radius: 25px 25px 0 25px;
-            background-color: #a2a8c8;
+            background-color: #164863;
             color: white;
             text-align: left;
             font-size: 20px;
@@ -153,7 +153,7 @@
         .menu-button::before,
         .menu-button::after {
             display: block;
-            background-color: #a2a8c8;
+            background-color: #164863;
             position: absolute;
             height: 4px;
             width: 30px;
@@ -184,15 +184,12 @@
             margin-top: 0px;
             transform: rotate(-405deg);
         }
-        #home{
-            background-image: url("../assents/Images/bg.png");
-            background-size: cover;
-        }
+
 
         /*MEDIA QUERY*/
         @media screen and (max-width: 600px) {
 
-            .aboutme-Img{
+            .aboutme-Img {
                 padding-right: 50px;
                 padding-left: 50px;
             }
@@ -218,12 +215,12 @@
         }
 
         @media screen and (max-width: 600px) {
-            .aboutme-Img > img{
+            .aboutme-Img > img {
                 padding-left: 30px;
                 padding-right: 50px;
             }
 
-            .aboutme-Img{
+            .aboutme-Img {
                 padding-right: 150px;
                 padding-left: 100px;
             }
@@ -247,7 +244,7 @@
         }
 
         @media (max-width: 700px) {
-            .aboutme-Img{
+            .aboutme-Img {
                 padding-right: 100px;
                 padding-left: 100px;
             }
@@ -338,36 +335,41 @@
             }
         }
 
-        @media (min-width: 768px){
-            .row-cols-md-4>* {
+        @media (min-width: 768px) {
+            .row-cols-md-4 > * {
                 flex: 0 0 auto;
                 width: 50%;
             }
         }
 
-        @media (max-width: 426px){
+        @media (max-width: 426px) {
 
-            #home{
+            #home {
                 position: relative;
                 width: 200%;
             }
-            #about{
+
+            #about {
                 position: relative;
                 width: 200%;
             }
-            #service{
+
+            #service {
                 position: relative;
                 width: 200%;
             }
-            #experience{
+
+            #experience {
                 position: relative;
                 width: 200%;
             }
-            #contactme{
+
+            #contactme {
                 position: relative;
                 width: 200%;
             }
-            .aboutMe > h2{
+
+            .aboutMe > h2 {
                 margin-top: 15px;
             }
         }
@@ -377,8 +379,9 @@
 <body>
 <nav class="navbar fixed-header" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
 
-    <a class="navbar-brand" style="font-weight: 600;font-size: 24px;text-transform: uppercase;color: #1F75AC; font-family: 'monospace';"
-       href="index.html">.RASHI.</a>
+    <a class="navbar-brand"
+       style="font-weight: 600;font-size: 24px;text-transform: uppercase;color: #1F75AC; font-family: 'monospace';"
+       href="index.html"><img src="assents/Images/Exclude.png" style="width: 100px"></a>
     <input id="menu-toggle" type="checkbox"/>
     <label class='menu-button-container' for="menu-toggle">
         <div class='menu-button'></div>
@@ -393,23 +396,25 @@
 </nav>
 <main class="main">
     <!--Home Page-->
-    <section id="home"  >
-        <div class="container">
+    <div class="cricle1"></div>
+    <div class="cricle2"></div>
+    <div class="cricle3"></div>
+    <section id="home">
+
+        <div class="container" style="margin-top: 100px">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title">
-
-                        <div class="main-image1"></div>
-                        <br>
-                        <h6 class="main-subtitle" style="font-size: 10px;color: #000000;margin: 0">HELLO THERE,NICE TO
-                            MEET YOU..! I'M</h6>
+                    <div class="section-title" style="margin: 50px">
+                        <span>Hey I'm</span>
                         <div class="content">
-                            <h1><i>Rashmi</i></h1>
+                            <h1>Rashmi Sharmila</h1>
                         </div>
-                        <p style="font-size: 15px;color: #000000;margin: 0">Full stack developer</p><br>
-                        <a class="btn-mailme" href=mailto:“rsrashi0430@gmail.com”><span>Scheduled a mail!</span></a>
+                        <p style="justify-content: center">A creative full stack developer, specializes in creating
+                            innovative web solutions,<br> focusing on designing beautiful, responsive, and user-friendly
+                            websites across various projects.</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -455,10 +460,14 @@
                             I
                             am
                             most interested in learning new things and technologies.
-                            I've worked as a student counselor and academy coordinator.<br><br>
-                            Now I have a small online business. Business management and financial management are skills
-                            that
-                            will develop alongside my company.</p>
+                            <br><br>
+                        </p>
+                        <div class="col-lg-6 mt-lg-0 mt-6">
+                            <button CLASS="btn-downloadcv">
+                                <a href="/assents/Rashmi Sharmila-CV.pdf"
+                                   target="_blank">Download CV</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -505,6 +514,7 @@
                                         at 2nd semester. now i learned fundamental of java programming,OOP,Layerd
                                         Architecture,Internet
                                         technology,Hibernate.</p>
+
                                 </div>
                             </div>
                             <div class="card" STYLE="border:0">
@@ -516,55 +526,13 @@
                                     <p class="card-text">I did AL's in Mathematics.</p>
                                 </div>
                             </div>
-                            <div class="card" STYLE="border:0">
-                                <div class="info">
-                                    <h5 class="title">Advanced Mobile Application Developer</h5>
-                                    <h6><p class="year-text-right"><i class="font-year">Present</i></p></h6>
 
-                                    <BR>
-                                    <p><B>- Academy Of Computer Programming And Training </B></p>.
-                                </div>
-                            </div>
 
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-lg-0 mt-3">
                     <div class="timeline">
-                        <div class="card-header header-title">Experience</div>
-                        <div class="outer">
-                            <div class="card" STYLE="border:0">
-                                <div class="info">
-                                    <h5 class="title">Course- Coordinate</h5>
-                                    <h6><p class="year-text"><i class="font-year">(2021 JANU-2021 DEC)</i></p></h6>
-                                    <p><B>- Institute of Software Engineering</B></p>
-                                </div>
-                            </div>
-                            <div class="card" STYLE="border:0">
-                                <div class="info">
-                                    <h5 class="title">Course- Coordinate</h5>
-                                    <h6><p class="year-text"><i class="font-year">(2023 JANU-Present)</i></p></h6>
-                                    <p><B>- Academy Of Computer Programming And Training</B></p>
-                                </div>
-                            </div>
-                            <div class="card" STYLE="border:0">
-                                <div class="info">
-                                    <h5 class="title">Director</h5>
-                                    <h6><p class="year-text"><i class="font-year">(2023 JANU-Present)</i></p></h6>
-                                    <p><B>- Blaze.lk</B></p>
-                                </div>
-                            </div>
-                            <div class="card" STYLE="border:0">
-                                <div class="info">
-                                    <h5 class="title">Member of Students Committee</h5>
-                                    <h6><p class="year-text"><i class="font-year">(Present)</i></p></h6>
-                                    <p><B>- Institute of Software Engineering</B></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="col-lg-6 mt-lg-0 mt-6">
                         <div class="card-header header-title">Skill</div>
                         <div class="card-body">
                             <div class="container">
@@ -583,14 +551,15 @@
                                                 src="assents/Images/css-3.png"
                                                 width="70px;" height="70px"></div>
                                     </div>
-                                    <button CLASS="btn-downloadcv">
-                                        <a href="/assents/payment%20details.pdf"
-                                           target="_blank">Download CV</a>
-                                    </button>
+
 
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <br>
+                    <div class="col-lg-6 mt-lg-0 mt-6">
+
                     </div>
                 </div>
             </div>
@@ -608,11 +577,12 @@
                         <nav class="project-nav">
                             <div class="items">
                                 <div onclick="tabBarFunction(event,'project')" class="nav-link lineBorder"
-                                     id="btn-project">Projects
+                                     id="btn-project">Destop Application
                                 </div>
                                 <div onclick="tabBarFunction(event,'assigments')" class="nav-link lineBorder"
-                                     id="btn-assignment">Assignment
+                                     id="btn-assignment">Web Application
                                 </div>
+
                                 <div onclick="tabBarFunction(event,'ui')" class="nav-link lineBorder" id="btn-ui">
                                     UI/UX
                                 </div>
@@ -622,14 +592,13 @@
                         <div class="typeofservice">
 
                             <div id="project" class="tabBar">
-                                <h5><b>-DESKTOP APPLICATIONS-</b></h5><br>
                                 <div class="row row-cols-1 row-cols-md-4 g-5">
                                     <div class="col">
                                         <div id="projectTab1" class="card-project hvr-forward">
                                             <img src="assents/hotelManagmentSsytem.png"
                                                  class="card-img-top" alt="..." width="150px" height="200px">
                                             <div class="card-body">
-                                                <h5 class="card-title">Hotel Management System</h5>
+                                                <h5 class="card-title" style="color: white">Hotel Management System</h5>
                                                 <a target="_blank" class="btn-Preview hvr-border-fade"
                                                    href="https://github.com/rashmisharmila/hotelManagementSystem.git">View</a>
 
@@ -642,152 +611,83 @@
                                                  class="card-img-top"
                                                  alt="..." width="150px" height="200px">
                                             <div class="card-body">
-                                                <h5 class="card-title">Connect 4 Game</h5>
+                                                <h5 class="card-title" style="color: white">Connect 4 Game</h5>
                                                 <a target="_blank" class="btn-Preview hvr-border-fade"
                                                    href="https://github.com/rashmisharmila/connect4game.git">View</a>
 
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <br><h5><b>-WEB APPLICATIONS-</b></h5><br>
-                                <div class="row row-cols-1 row-cols-md-4 g-5">
-                                    <div class="col">
-                                        <div id="projectTab" class="card-project hvr-forward">
-                                            <img src="assents/Images/Projects/calculator.jpg"
-                                                 class="card-img-top" alt="..." width="150px" height="200px">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Web Calculator</h5>
-                                                <a target="_blank" class="btn-Preview hvr-border-fade"
-                                                   href="https://github.com/rashmisharmila/-internetTechnologies-Assigment10">View</a>
-                                                <a target="_self" class="btn-Demo hvr-border-fade"
-                                                   href="https://rashmisharmila.github.io/Web-Calculator/">Demo</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="col">
                                         <div class="card-project hvr-forward">
-                                            <img src="assents/Images/Projects/car.png"
+                                            <img src="assents/Images/car-1.webp"
                                                  class="card-img-top"
                                                  alt="..." width="150px" height="200px">
                                             <div class="card-body">
-                                                <h5 class="card-title">Car Animation </h5>
+                                                <h5 class="card-title" style="color: white">Car Rental Management
+                                                    System</h5>
                                                 <a target="_blank" class="btn-Preview hvr-border-fade"
-                                                   href="https://github.com/rashmisharmila/-internetTechnologies-Assigment04/blob/main/case06.html">View</a>
-                                                <a target="_self" class="btn-Demo hvr-border-fade"
-                                                   href="projects/car_Animation/case06.html">Demo</a>
+                                                   href="https://github.com/rashmisharmila/CarRentalManagementSystem.git">View</a>
 
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card-project hvr-forward">
-                                            <img src="assents/Images/Projects/SPA-POS.jpg"
-                                                 class="card-img-top" alt="..." width="150px" height="200px">
-                                            <div class="card-body">
-                                                <h5 class="card-title">SAP POS System</h5>
-                                                <a target="_blank" class="btn-Preview hvr-border-fade"
-                                                   href="https://github.com/rashmisharmila/POS_Application.git">View</a>
-                                                <a target="_self" class="btn-Demo hvr-border-fade"
-                                                   href="https://rashmisharmila.github.io/SAP-PlaceOrderSystem/">Demo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card-project hvr-forward">
-                                            <img src="projects/Simple_Login_form/Group 4.png"
-                                                 class="card-img-top" alt="..." width="150px" height="200px">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Simple Login Form</h5>
-                                                <a target="_blank" class="btn-Preview hvr-border-fade"
-                                                   href="https://github.com/rashmisharmila/Simple_Login_Form.git">View</a>
-                                                <a target="_self" class="btn-Demo hvr-border-fade"
-                                                   href="https://rashmisharmila.github.io/Simple_Login_Form/">Demo</a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
+
 
                             </div>
                             <div id="assigments" class="tabBar">
                                 <div class="row row-cols-1 row-cols-md-4 g-5">
                                     <div class="col">
-                                        <div class="card-project hvr-forward">
-                                            <img src="assents/Images/assigmentImage.png"
+                                        <div id="projectTab" class="card-project hvr-forward">
+                                            <img src="assents/Images/miniprojects.jpg"
                                                  class="card-img-top" alt="..." width="150px" height="200px">
                                             <div class="card-body">
-                                                <h5 class="card-title">CSS Animation</h5>
-                                                <p>All are Animation Assignments</p>
-                                                <a target="_self" class="btn-Preview hvr-border-fade"
-                                                   href="pages/Animation/index.html">View</a>
+                                                <h5 class="card-title" style="color: white">Html CSS & JS Projects</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/HTML_CSS_JS_Projects.git">View</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/tams.jpeg"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body" style="color: white">
+                                                <h5 class="card-title"> Travel Agency Management System</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/Simple_Login_Form.git">View</a>
 
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="card-project hvr-forward">
-                                            <img src="assents/Images/assigmentImage.png"
+                                            <img src="assents/Images/fbclone.jpg"
                                                  class="card-img-top" alt="..." width="150px" height="200px">
-                                            <div class="card-body">
-                                                <h5 class="card-title">CSS Positioning</h5>
-                                                <p>All are positioning Assignments</p>
+                                            <div class="card-body" style="color: white">
+                                                <h5 class="card-title">Facebook Clone</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/Facebook-Clone.git">View</a>
 
-                                                <a target="_self" class="btn-Preview hvr-border-fade"
-                                                   href="pages/Possion/index.html">View</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="card-project hvr-forward">
-                                            <img src="assents/Images/assigmentImage.png"
+                                            <img src="assents/Images/digitalClock.png"
                                                  class="card-img-top" alt="..." width="150px" height="200px">
-                                            <div class="card-body">
-                                                <h5 class="card-title">CSS Grid Layout</h5>
-                                                <p>All are Grid Layout Assignments</p>
+                                            <div class="card-body" style="color: white">
+                                                <h5 class="card-title">Digital Clock</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/Digital-Clock.git">View</a>
+                                                <a target="_self" class="btn-Demo hvr-border-fade"
+                                                   href="https://rashmisharmila.github.io/Digital-Clock/">Demo</a>
 
-                                                <a target="_self" class="btn-Preview hvr-border-fade"
-                                                   href="pages/GridLayout/index.html">View</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card-project hvr-forward">
-                                            <img src="assents/Images/assigmentImage.png"
-                                                 class="card-img-top" alt="..." width="150px" height="200px">
-                                            <div class="card-body">
-                                                <h5 class="card-title">CSS Transitions</h5>
-                                                <p>All are Transitions Assignments</p>
-
-                                                <a target="_self" class="btn-Preview hvr-border-fade"
-                                                   href="pages/Transitions/index.html">View</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="card-project hvr-forward">
-                                            <img src="assents/Images/assigmentImage.png"
-                                                 class="card-img-top" alt="..." width="150px" height="200px">
-                                            <div class="card-body">
-                                                <h5 class="card-title">JS Assignments</h5>
-                                                <p>All are JS Assignments</p>
-
-                                                <a target="_self" class="btn-Preview hvr-border-fade"
-                                                   href="pages/JsProjects/index.html">View</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card-project hvr-forward">
-                                            <img src="assents/Images/assigmentImage.png"
-                                                 class="card-img-top" alt="..." width="150px" height="200px">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Bootstrap Assignments</h5>
-                                                <p>All are Bootstrap Assignments</p>
-
-                                                <a target="_self" class="btn-Preview hvr-border-fade"
-                                                   href="pages/boostrap/index.html">View</a>
                                             </div>
                                         </div>
                                     </div>
@@ -799,8 +699,8 @@
                                         <div id="uiTab" class="card-project hvr-forward">
                                             <img src="assents/Images/UI%20Designs/Cupcake%201.png"
                                                  class="card-img-top" alt="..." width="150px" height="200px">
-                                            <div class="card-body">
-                                                <h5 class="card-title">MiniSweeties Mobile App Design</h5>
+                                            <div class="card-body " style="color: white">
+                                                <h5 class="card-title" >MiniSweeties Mobile App Design</h5>
 
                                                 <a target="_blank" class="btn-Preview hvr-border-fade"
                                                    href="assents/Images/UI Designs/Cupcake 1.png">View</a>
@@ -813,7 +713,7 @@
                                                  class="card-img-top"
                                                  alt="..." width="150px" height="200px">
                                             <div class="card-body">
-                                                <h5 class="card-title">Music Mobile App Design</h5>
+                                                <h5 class="card-title" style="color: white">Music Mobile App Design</h5>
 
                                                 <a target="_blank" class="btn-Preview hvr-border-fade"
                                                    href="assents/Images/UI Designs/Group 2.png">View</a>
@@ -825,7 +725,8 @@
                                             <img src="assents/Images/UI Designs/Group 2 (2).png"
                                                  class="card-img-top" alt="..." width="150px" height="200px">
                                             <div class="card-body">
-                                                <h5 class="card-title">Techgear` Website Design </h5>
+                                                <h5 class="card-title" style="color: white">Techgear` Website
+                                                    Design </h5>
                                                 <a target="_blank" class="btn-Preview hvr-border-fade"
                                                    href="assents/Images/UI Designs/Group 2 (2).png">View</a>
                                             </div>
@@ -836,7 +737,7 @@
                                             <img src="assents/Images/UI%20Designs/Watches.png"
                                                  class="card-img-top" alt="..." width="150px" height="200px">
                                             <div class="card-body">
-                                                <h5 class="card-title">Me. Mobile app Design</h5>
+                                                <h5 class="card-title" style="color: white">Me. Mobile app Design</h5>
                                                 <a target="_blank" class="btn-Preview hvr-border-fade"
                                                    href="assents/Images/UI Designs/Watches.png">View</a>
                                             </div>
@@ -864,13 +765,13 @@
                                 <form>
                                     <h5 class="contactme-subtitle">Get In Touch</h5>
 
-                                    <div class="form-inputs"><input type="text" placeholder="Your name"></div>
-                                    <div class="form-inputs"><input type="text" placeholder="Your email"></div>
-                                    <div class="form-inputs"><input type="text" placeholder="Your contact number">
+                                    <div class="form-inputs"><input type="text" placeholder=" Your name"></div>
+                                    <div class="form-inputs"><input type="text" placeholder=" Your email"></div>
+                                    <div class="form-inputs"><input type="text" placeholder=" Your contact number">
                                     </div>
                                     <div class="form-inputs"><textarea id="textarea" title="Message" cols="30"
                                                                        rows="5"
-                                                                       placeholder="Write a Message"
+                                                                       placeholder=" Write a Message"
                                                                        required></textarea></div>
                                     <button class="btn-sendMessage">Send Message</a></button>
 
@@ -881,13 +782,13 @@
                                 <form>
                                     <h5 class="contactme-subtitle">My Contact Details</h5>
                                     <div style="width: 400px;height: 350px">
-                                        <div><span class="contactme-mydetails">Emial <br>rsrashi0430@gmail.com</span>
+                                        <div><span class="contactme-mydetails"> Emial <br>rsrashi0430@gmail.com</span>
                                         </div>
                                         <br>
-                                        <div><span class="contactme-mydetails">Phone <br>+(94)70 271 3066</span></div>
+                                        <div><span class="contactme-mydetails"> Phone <br>+(94)70 271 3066</span></div>
                                         <br>
                                         <div><span
-                                                class="contactme-mydetails">Address <br>No 194/A<br>Maharakmana Rd,<br>Mawala<br>Wadduwa</span>
+                                                class="contactme-mydetails"> Address <br>No 194/A<br>Maharakmana Rd,<br>Mawala<br>Wadduwa</span>
                                         </div>
                                     </div>
                                 </form>

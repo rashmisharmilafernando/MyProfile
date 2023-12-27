@@ -177,11 +177,9 @@ span::selection {
     display: none;
 }
 
-#ui {
+#ui{
     display: none;
 }
-
-
 
 .container .icon .fa {
     position: absolute;
