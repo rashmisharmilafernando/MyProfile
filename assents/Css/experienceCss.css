@@ -129,6 +129,7 @@
     /*  border: 3px solid black;*/
     justify-content: center;
     display: inline-block;
+    margin: 10px;
 }
 
 .div > img {

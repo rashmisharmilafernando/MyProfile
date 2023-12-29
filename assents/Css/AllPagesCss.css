@@ -33,30 +33,30 @@ body {
 /*Apply highlighter*/
 *::selection {
     color: white;
-    background-color: #a2a8c8;
+    background-color: #164863;
 }
 
 p::selection {
     color: white;
-    background-color: #a2a8c8;
+    background-color: #164863;
 }
 
 h2::selection {
     color: white;
-    background-color: #a2a8c8;
+    background-color: #164863;
 }
 
 h1::selection {
-    color: #a2a8c8;
+    color: #164863;
     background-color: white;
 }
 .header-title::selection {
-    color: #a2a8c8;
+    color: #164863;
     background-color: white;
 }
 span::selection {
     color: white;
-    background-color: #a2a8c8;
+    background-color: #164863;
 }
 .topnav {
     overflow: hidden;
