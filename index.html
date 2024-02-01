@@ -790,7 +790,9 @@
                                 <div onclick="tabBarFunction(event,'assigments')" class="nav-link lineBorder"
                                      id="btn-assignment">Web Application
                                 </div>
-
+                                <div onclick="tabBarFunction(event,'md')" class="nav-link lineBorder"
+                                     id="btn-md">Mobile Application
+                                </div>
                                 <div onclick="tabBarFunction(event,'ui')" class="nav-link lineBorder" id="btn-ui">
                                     UI/UX
                                 </div>
@@ -901,6 +903,67 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/dsms.jpg"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body" style="color: white">
+                                                <h5 class="card-title">Delivery Service Management System-Admin</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href=https://github.com/rashmisharmila/DeliveryServiceManagementSystem.git">View</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="md" class="tabBar">
+                                <div class="row row-cols-1 row-cols-md-4 g-5">
+                                    <div class="col">
+                                        <div id="projectTab2" class="card-project hvr-forward">
+                                            <img src="assents/Images/todo.jpeg"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color: white">TO-DO App</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/TODO-APP.git">View</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/googlemap.png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color: white">Google Map API</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/Google-Map.git">View</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card-project hvr-forward">
+                                            <img src="assents/Images/chat app.png"
+                                                 class="card-img-top" alt="..." width="150px" height="200px">
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color: white">Chat App</h5>
+                                                <a target="_blank" class="btn-Preview hvr-border-fade"
+                                                   href="https://github.com/rashmisharmila/Frontend-ChatApp.git">View</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
                                 </div>
                             </div>
                             <div id="ui" class="tabBar">
@@ -1099,18 +1162,27 @@
     document.getElementById("btn-project").addEventListener("click", function () {
         $("#project").css({display: 'block'})
         $("#assigments").css({display: 'none'})
+        $("#md").css({display: 'none'})
         $("#ui").css({display: 'none'})
     })
 
     document.getElementById("btn-assignment").addEventListener("click", function () {
         $("#project").css({display: 'none'})
         $("#assigments").css({display: 'block'})
+        $("#md").css({display: 'none'})
         $("#ui").css({display: 'none'})
     })
 
+    document.getElementById("btn-md").addEventListener("click", function () {
+        $("#project").css({display: 'none'})
+        $("#assigments").css({display: 'none'})
+        $("#md").css({display: 'block'})
+        $("#ui").css({display: 'none'})
+    })
     document.getElementById("btn-ui").addEventListener("click", function () {
         $("#project").css({display: 'none'})
         $("#assigments").css({display: 'none'})
+        $("#md").css({display: 'none'})
         $("#ui").css({display: 'block'})
     })
 
