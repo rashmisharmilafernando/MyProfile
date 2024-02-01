@@ -1,13 +1,2 @@
 ﻿# My_Profile
-
-## wireFrame.cc
-<a href="https://wireframe.cc/pro/pp/349f45449631066">wireFrame</a>
-
-## Mock-up (Desktop, Laptop, Tab, Mobile)
-<a href="https://www.figma.com/file/0ZwERXytVa7lVmp5pFyQ9n/Rashmi-Sharmila(Mock-up-(Desktop%2C-Laptop)?node-id=27%3A21&t=z2iFm32ViB5YKW1I-1">Mock-up </a><br>
-
-
-
-
-
-
+![Screenshot 2024-02-01 161142](https://github.com/rashmisharmila/MyProfile/assets/108237108/e8ae0b39-3095-46c8-a112-c8a666535589)
